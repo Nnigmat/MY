@@ -10,17 +10,18 @@ Plugin 'L9'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'https://github.com/vim-scripts/tomatosoup.vim'
-Plugin 'https://github.com/flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline' 
 Plugin 'vim-scripts/Conque-Shell'
 Plugin 'tpope/vim-surround'
-Plugin 'python-mode/python-mode'
-"Plugin 'davidhalter/jedi-vim'
+"Plugin 'python-mode/python-mode'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'sjl/gundo.vim'
 Plugin 'rking/ag.vim'
+Plugin 'fcpg/vim-fahrenheit'
+Plugin 'AlessandroYorba/Alduin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,9 +41,11 @@ let mapleader=","
 
 set ls=2
 set t_Co=256
+set background=dark
 highlight Nontext ctermbg=none
 colorscheme gruvbox   
-syntax enable
+let g:gruvbox_contrast_dark='soft'
+syntax on
 
 set ai
 set smarttab
@@ -108,5 +111,3 @@ nnoremap <F5> :ConqueTermSplit ipython<CR>
 nnoremap <leader>s :mksession<CR>
 
 nnoremap <leader>a :Ag<CR>
-set listchars=tab:··
-set list
