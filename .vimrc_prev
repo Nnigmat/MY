@@ -25,6 +25,7 @@ Plugin 'AlessandroYorba/Alduin'
 Plugin 'supertab'
 Plugin 'Emmet.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'supertab'
 Plugin 'OmniSharp/omnisharp-vim'
 
 " All of your Plugins must be added before the following line
